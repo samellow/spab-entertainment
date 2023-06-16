@@ -10,9 +10,24 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Offside&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/3fec02a7a0.js" crossorigin="anonymous"></script>
-<script src="index.js"></script>
+
 </head>
-<body>
+<body class="capture-body">
+    <section class="">
+        <nav id="capture-nav">
+            <div class="nav-links" >
+                <ul>
+                    <li><a href="">Admin login</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="">Standings</a></li>
+                    <li> <a href="">Tournaments</a></li>
+                    <li><a href="capture.html">Results</a></li>
+                    <li><a href="">Location</a></li>
+                </ul>
+            </div> 
+        </nav>
+
+    </section>
     <section class="capture">
         <form class="form-container" id="form">
             <label for="gamer1">Gamer 1:</label>
@@ -29,7 +44,9 @@
 
             <p id="result"></p>
           
-            <button type="submit" onclick="submitScores()">Submit</button>
+            <button type="submit" >Submit</button>
           </form>
     </section>
+
+    <script src="index.js"></script>
 </body>

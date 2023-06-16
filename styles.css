@@ -272,7 +272,7 @@ label {
 
     /* Style for the submit button */
     button[type="submit"] {
-      background-color: #4CAF50;
+      background-color: #403D39;
       color: white;
       padding: 10px 15px;
       border: none;
@@ -284,4 +284,12 @@ label {
     #result {
       margin-top: 20px;
       font-weight: bold;
+    }
+
+    .capture-body{
+      background:#403D39;
+    }
+
+    #capture-nav{
+      justify-content: end;
     }
