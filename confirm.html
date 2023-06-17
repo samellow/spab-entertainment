@@ -22,31 +22,39 @@
                     <li><a href="">Standings</a></li>
                     <li> <a href="">Tournaments</a></li>
                     <li><a href="capture.html">Results</a></li>
-                    <li><a href="confirm.html">Location</a></li>
+                    <li><a href="">Location</a></li>
                 </ul>
             </div> 
         </nav>
 
     </section>
-    <section class="capture">
-        <form class="form-container" id="form">
-            <label for="gamer1">Gamer 1:</label>
-            <input type="text" id="gamer1" name="gamer1" placeholder="Enter Gamer 1">
-          
-            <label for="gamer2">Gamer 2:</label>
-            <input type="text" id="gamer2" name="gamer2" placeholder="Enter Gamer 2">
-          
-            <label for="score1">Score for Gamer 1:</label>
-            <input type="number" id="score1" name="score1" placeholder="Enter Score for Gamer 1">
-          
-            <label for="score2">Score for Gamer 2:</label>
-            <input type="number" id="score2" name="score2" placeholder="Enter Score for Gamer 2">
 
-            <p id="result"></p>
-          
-            <button type="submit" class="btn" ><a href="confirm.html">SUBMIT</a></button>
-          </form>
+    <section  class= "confirm-data">
+        <div>
+            <h1>Confirm the results</h1>
+            <div id="data"></div>
+        </div>
+        <button type= "submit"class="btn" ><a href="capture.html">Confirm</a></button>
     </section>
+    
+   <script> 
+    const json = localStorage.getItem('form');
+    const obj = JSON.parse(json);
 
-    <script src="index.js"></script>
+    console.log(obj.gamer1,obj.gamer2)
+  
+    const markUp = `
+       <div class = "mark-up">
+        
+        <span>${obj.gamer1}: ${obj.score1}</span>
+        <br>
+        <span>${obj.gamer2}: ${obj.score2}</span>
+        
+        </div>
+
+    `;
+  
+  document.getElementById('data').innerHTML += markUp;
+  
+  </script>
 </body>

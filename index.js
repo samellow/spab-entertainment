@@ -9,11 +9,14 @@ form.addEventListener('submit', (e) => {
   const json = JSON.stringify(formObject);
   localStorage.setItem('form',json);
   console.log(formObject);
+  console.log(formObject.gamer1)
+
+  window.location.href = "confirm.html";
 
 })
-  
-
  
 
-  
+  // confirm page
+
+
  

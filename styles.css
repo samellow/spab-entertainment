@@ -271,13 +271,18 @@ label {
 
 
     /* Style for the submit button */
-    button[type="submit"] {
-      background-color: #403D39;
+    .btn{
+      background-color: orangered;
       color: white;
       padding: 10px 15px;
       border: none;
       border-radius: 4px;
       cursor: pointer;
+    }
+
+    .btn a{
+      text-decoration: none;
+      color: inherit;
     }
   
 
@@ -292,4 +297,24 @@ label {
 
     #capture-nav{
       justify-content: end;
+    }
+
+
+
+
+    /*------confirm page------*/
+
+    .mark-up{
+      color: #fff;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    .confirm-data {
+      text-align: center;
+      color: #fff;
     }
