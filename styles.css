@@ -71,10 +71,15 @@ select {
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(black,rgb(29, 29, 29));
+    background-image: linear-gradient(#000405,#000405);
     background-position: center;
     background-size: cover;
     position: relative;
+    color: #f1fbfe;
+}
+
+.header span{
+  color: #f44336;
 }
 nav{
     display: flex;
@@ -178,8 +183,8 @@ nav{
   width: 100%;
   text-align: center;
   padding: 30px 0;
-  color: #fff;
-  background: rgb(75, 74, 74);
+  color: #f1fbfe;
+  background: #000405;
 }
 
 .footer h4{
@@ -200,11 +205,11 @@ nav{
 .sub-header{
   height: 50vh;
   width: 100%;
-  background: rgb(20, 20, 20);
+  background: #000405;
   background-position: center;
   background-size: cover;
   text-align: center;
-  color: #FFA41B;
+  color: #f44336;
   margin-bottom: 0;
 
 }
@@ -218,7 +223,7 @@ nav{
   padding:50px 30px ;
   padding-top: 50px;
   padding-bottom: 50px;
-  background: #A0C49D;
+  background: #000405;
 
 }
 
@@ -229,12 +234,13 @@ nav{
 }
 
 .about-col{
-  flex-basis: 48%;
+  flex-basis: 31%;
   padding: 30px 15px;
-  background: lightgray;
-  border: 2px solid lightgray;
+  background: #9a7cb6;
   margin-top: 0;
   border-radius: 10px;
+  position: relative;
+  overflow: hidden;
 }
 
 
